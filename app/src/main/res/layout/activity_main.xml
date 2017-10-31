@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.datasalvestamine.MainActivity">
+
+    <TextView
+        android:layout_width="261dp"
+        android:layout_height="200dp"
+        android:text="Hello World!"
+        android:id="@+id/productOutput"
+        android:layout_alignBaseline="@+id/productInput"
+        android:layout_alignBottom="@+id/productInput"
+        android:layout_alignLeft="@+id/addbutton"
+        android:layout_alignStart="@+id/addbutton"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:text="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/productInput"
+        android:layout_toEndOf="@+id/productInput"
+        android:layout_marginBottom="57dp" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_alignBottom="@+id/addbutton"
+        android:layout_alignRight="@+id/productOutput"
+        android:layout_alignEnd="@+id/productOutput"
+        android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/productInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absolutey="142dp"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
